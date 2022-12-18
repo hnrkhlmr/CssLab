@@ -1,32 +1,100 @@
 <header>
     <nav class="navbar navbar-default">
+        <a class="navbar-brand" href="/">Mybrary</a>
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-mobile" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Mybrary</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="bs-mobile">
             
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Authors <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/authors">Authors</a></li>
+                            <li><a href="/authors/new">Add Author</a></li>
+                        </ul>
+                    </li>
+                
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Books <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/authors">Authors</a></li>
-                        <li><a href="/authors/new">Add Author</a></li>
                         <li><a href="/books">Books</a></li>
                         <li><a href="/books/new">Add Book</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Genres <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/genres">Genres</a></li>
+                        <li><a href="/genres/new">Add Genre</a></li>
                     </ul>
                 </li>
 
             </ul>
         </div><!-- /.navbar-collapse -->
+        <div id="desktopMenu">
+            <ul id="main-menu" class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" data-target="#collapse-1076" data-toggle="collapse" aria-haspopup="true" aria-expanded="false">
+                        Authors
+                    </a>
+                    <div id="collapse-1076" data-parent="#main-menu" class="mega-menu collapse collapse-holder" style=" background-color: #f2f3f4;">
+                        <div class="">
+                            <ul class="dropdown-ul padding-x-space py-4">
+                                <li class="col-4 col-xl-3 mb-3">
+                                    <a class="dropdown-item" href="/authors">
+                                        <h3> Authors</h3>
+                                    </a>
+                                    <ul class="list-unstyled">
+                                        <li class="nav-item">
+                                            <a class="dropdown-item" href="/authors">Authors List</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item" href="/authors/new">New Author</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="col-4 col-xl-3 mb-3">
+                                    <a class="dropdown-item" href="/books">
+                                        <h3> Books</h3>
+                                    </a>
+                                    <ul class="list-unstyled">
+                                        <li class="nav-item">
+                                            <a class="dropdown-item" href="/books">Books List</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item" href="/books/new">New Book</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="col-4 col-xl-3 mb-3">
+                                    <a class="dropdown-item" href="/genres">
+                                        <h3> Genres</h3>
+                                    </a>
+                                    <ul class="list-unstyled">
+                                        <li class="nav-item">
+                                            <a class="dropdown-item" href="/genres">Genres List</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item" href="/genres/new">New Genre</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div><!-- /.container-fluid -->
     </nav>
 </header>

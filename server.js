@@ -5,6 +5,7 @@ const expressLayouts = require('express-ejs-layouts')
 const indexRouter = require('./routes/index')
 const authorRouter = require('./routes/authors')
 const bookRouter = require('./routes/books')
+const genreRouter = require('./routes/genres')
 
 app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
@@ -15,6 +16,7 @@ app.use(express.static('public'))
 app.use('/', indexRouter)
 app.use('/authors', authorRouter)
 app.use('/books', bookRouter)
+app.use('/genres', genreRouter)
 
 app.listen(process.env.PORT || 3000)
 
