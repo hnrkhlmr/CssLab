@@ -6,6 +6,7 @@ const indexRouter = require('./routes/index')
 const authorRouter = require('./routes/authors')
 const bookRouter = require('./routes/books')
 const genreRouter = require('./routes/genres')
+const userRouter = require('./routes/user')
 
 app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
@@ -17,6 +18,8 @@ app.use('/', indexRouter)
 app.use('/authors', authorRouter)
 app.use('/books', bookRouter)
 app.use('/genres', genreRouter)
+
+app.use('/user', userRouter)
 
 app.listen(process.env.PORT || 3000)
 
